@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/simple-block-map",
+	"version": "0.1.0",
+	"title": "Simple Block Map",
+	"category": "widgets",
+	"icon": "location",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"attributes": {
+		"lat": {
+			"type": "number",
+			"default": 51.505
+		},
+		"lng": {
+			"type": "number",
+			"default": -0.09
+		},
+		"zoom": {
+			"type": "number",
+			"default": 13
+		},
+		"height": {
+			"type": "number",
+			"default": 400
+		}
+	},
+	"textdomain": "simple-block-map",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
